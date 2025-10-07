@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaaS Commercial Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'whatsapp-green': '#00a884', // Newer green
+              'whatsapp-green-light': '#25D366', // OG green for badges etc
+              'whatsapp-teal': '#128C7E',
+              'whatsapp-teal-dark': '#075E54',
+              'whatsapp-outgoing-message': '#e7ffdb',
+              'whatsapp-blue': '#34B7F1',
+              'whatsapp-system-message': '#fefce8', // Yellowish for system messages
+              'app-background': '#eae6df',
+              'accent-blue': '#34B7F1',
+              'light-gray': '#F0F2F5',
+              'dark-gray': '#202c33', // Darker top bar
+              'text-primary': '#111b21',
+              'text-secondary': '#667781',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
